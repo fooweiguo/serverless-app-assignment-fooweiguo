@@ -1,19 +1,10 @@
-terraform {
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "~> 5.0"
-    }
-  }
-}
-
 # Configure the AWS Provider
 # Uncomment the region, access_key and secret_key if you are running locally
-provider "aws" {
-   region = "us-east-1"
-   access_key = "ACCESS_KEY" # Update accordingly
-   secret_key = "SECRET_KEY" # Update accordingly
-}
+# provider "aws" {
+#    region = "us-east-1"
+#    access_key = "ACCESS_KEY" # Update accordingly
+#    secret_key = "SECRET_KEY" # Update accordingly
+# }
 
 data "aws_iam_policy_document" "queue" {
   statement {
