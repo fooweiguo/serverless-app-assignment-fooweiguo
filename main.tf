@@ -33,6 +33,7 @@ resource "aws_sqs_queue" "queue" {
 
 resource "aws_s3_bucket" "bucket" {
   bucket = "fooweiguo-s3-sqs"
+  force_destroy = true
 }
 
 resource "aws_s3_bucket_notification" "bucket_notification" {
